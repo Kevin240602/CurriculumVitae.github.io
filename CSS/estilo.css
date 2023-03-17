@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,600&family=Yellowtail&display=swap');
+
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth; /* menos brusco el desplazamiento de la pagina */
+}
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+    url("../Imagenes/fondodepagina.jpg");/* degradado de colores con una dirección y colores especificados. */
+    background-size: cover;/* La imagen es renderizada, preservando su proporción propia */
+    background-position: center center; /* define la posición inicial de la imagen de fondo especificada */
+   color: white; 
+}
+.inicio .contenido{
+    max-width: 1000px;
+    margin:auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenido header{
+    padding: 30px;
+}
+.inicio .contenido header nav{
+    position: fixed; /* hace que un elemento se coloque respecto al viewport, Le dices dónde posicionarse al elemento, y se queda ahí mientras el usuario hace scroll. */
+    margin-left: 60px;
+    background-color:#DC7633 ;
+    padding: 10px;
+    border-radius: 10px; /*permite redondear los bordes de las cajas */
+    text-align: left;
+    z-index: 99; /* los elementos con mayor valor z-index cubren aquellos con menor valor. */
+    display: none;
+}
+.inicio .contenido header nav a{
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-decoration: none;
+    margin-bottom:10px;
+    font-weight: bold; /* se emplea para mostrar un texto en negrita */
+}
+.inicio .contenido header .logo-marca{
+font-weight: bold;
+font-size:4rem; /* REM : el tamaño de letra del elemento raíz */
+font-family: "Yellowtail";
+text-shadow: 0 0 35px white; /* SOMBRA */
+}
+.inicio .contenido header .logo-marca .color{
+    color: #DC7633;
+    font-family: "Yellowtail";
+}
+.inicio .contenido header .barra-navegadora{
+    position: fixed;
+    background-color: #DC7633;
+    font-size: 20px;
+    /* dimension de la letra */
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+.inicio .contenido header .barra-navegadora:hover{
+    box-shadow: 0 0 50px white;/* sombra difuminada */
+}
+.inicio .contenido .informacion{
+padding-bottom: 130px;/* espacio de relleno requerido en la parte inferior del elemento */
+}
+.inicio .contenido .informacion h1{
+ font-size: 3rem;
+ letter-spacing: 5px;/* espacio entre caracteres */
+}
+.inicio .contenido .informacion h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.inicio .contenido .informacion .redes{
+    margin: 20px 0;
+}
+.inicio .contenido .informacion .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: #DC7633;
+    border: 2px solid #DC7633;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 20px;
+    transition: .3s;
+}
+.inicio .contenido .informacion .redes a:hover{
+    color:white;
+    background-color: #DC7633;
+    box-shadow: 0 0 35px white;
+}
+.inicio .contenido .imag{
+    position: relative;
+}
+.inicio .contenido .imag img{
+    max-width: 250px;
+    border-radius: 75%;
+    border: 5px solid #DC7633;
+    position: absolute;
+    left: 50%;
+    top: -120px;
+    transform: translateX(-50%);
+}
+/* -------------------- */
+.titsobremi{
+    font-family: "Yellowtail";
+    font-size: 5rem;
+}
+.sobremi{
+    background-color: white;
+    padding: 140px 0 75px 0;
+    text-align: center;
+}
+.sobremi .contenido{
+ max-width: 1000px;
+ margin: auto;
+ padding: 0 10px;
+} 
+.sobremi .contenido h3{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.sobremi .contenido .parrafo{
+    color:#DC7633;
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 0px;
+}
+.sobremi .contenido p{
+    max-width: 700px;
+    margin: auto;
+    color:black;
+}
+.sobremi .contenido .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobremi .contenido .fila .col{
+    width: 30%;
+}
+.sobremi .contenido .fila .col i{
+ color: #DC7633;
+ display: inline-block;
+ width: 40px;
+ height: 40px;
+ border: 2px solid #DC7633;
+ line-height: 40px;
+ border-radius: 50%;
+}
+.sobremi .contenido .fila .col{
+    display: block;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.sobremi .contenido .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+.habilidades .contenido .titulo{
+    font-family: "Yellowtail";
+    font-size: 5rem;
+}
+.habilidades{
+    padding: 30px 0 70px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+    url("../Imagenes/habilidades.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color:white;
+}
+.habilidades .contenido{
+    max-width: 1000px;
+    margin:auto;
+    padding: 0 100px;
+}
+.habilidades .contenido h3{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.habilidades .contenido .skills{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.habilidades .contenido .skills .detalles{
+    width: 47%;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.habilidades .contenido .skills span{
+    font-size: 32px;
+}
+.menu{
+    position: relative;
+    border: 1px solid #DC7633;
+    border-radius: 20px;
+}
+.menu div{
+    position: relative;
+    width: 0;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #DC7633;
+}
+#html-menu{
+    animation: html-barra 2s forwards;
+}
+@keyframes html-barra{
+    100%{
+        width: 90%;
+    }
+}
+#js-menu{
+    animation: js-barra 2s forwards;
+}
+@keyframes js-barra{
+    100%{
+        width: 70%;
+    }
+}
+#php-menu{
+    animation: php-barra 2s forwards;
+}
+@keyframes php-barra{
+    100%{
+        width: 80%;
+    }
+}
+#boot-menu{
+    animation: boot-barra 2s forwards;
+}
+@keyframes boot-barra{
+    100%{
+        width: 75%;
+    }
+}
+#pho-menu{
+    animation: pho-barra 2s forwards;
+}
+@keyframes pho-barra{
+    100%{
+        width: 95%;
+    }
+}
+#ilu-menu{
+    animation: ilu-barra 2s forwards;
+}
+@keyframes ilu-barra{
+    100%{
+        width: 75%;
+    }
+}
+
+.resumen .contenido .titulo{
+    font-family: "Yellowtail";
+    font-size: 5rem;
+}
+.resumen{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 50px 0 75px 0;
+}
+.resumen .contenido{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.resumen .contenido h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.resumen .contenido .informacion{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.resumen .contenido .informacion .col{
+    width: 45%;
+}
+.resumen .contenido .informacion .col .titulo2{
+    display: inline-block;
+    color:#DC7633;
+    font-weight: bold;
+    border:2px solid #DC7633;
+    padding: 10px;
+}
+.resumen .contenido .informacion .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.resumen .contenido .informacion .col table .datos{
+width: 40%;
+border-bottom: 1px solid rgb(46, 43, 43);
+}
+.resumen .contenido .informacion .col table h4{
+margin-top: 10px;
+}
+.resumen .contenido .informacion .col table h3{
+font-size: 20px;
+margin-bottom: 5px;
+}
+.resumen .contenido .informacion .col table p{
+    font-size: 14px;
+}
+.resumen .contenido .informacion .col table .promedio{
+    display: block;
+    color: #DC7633;
+    font-weight: bold;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.resumen .contenido .informacion .col table .descripcion{
+    border-left: 1px solid rgb(46, 43, 43);
+    padding-left: 20px;
+}
+.contacto .contenido .titulo2{
+    font-family: "Yellowtail";
+    font-size: 5rem;
+}
+.contacto{
+    background-color: rgb(15, 15, 15);
+    padding: 14px 0 10px 0;
+    color: white;
+    text-align: center;
+}
+.contacto .contenido{
+    max-width: 1000px;
+    margin:auto;
+    padding: 10px 100px;
+}
+.contacto .contenido h3{
+    font-size: 45px;
+    padding: 2px;
+}
+.contacto .contenido .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido .fila .col{
+    margin-top: 20px;
+}
+.contacto .contenido .fila .col h2{
+    color: #DC7633;
+    font-size: 2rem;
+}
+.contacto .contenido .fila .col span{
+    font-size: 20px;
+}
+
+.contenido-volver{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 4rem;
+    height: 4rem;
+    z-index: -1;
+}
+.contenido-volver .volver{
+    width: 0rem;
+    height: 0rem;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid #DC7633;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%)
+}
+.volver i{
+    position: absolute;
+    font-size: 2rem;
+    top:48%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(0);
+    color:#DC7633;
+    transition: .2s;
+}
+.fun{
+    z-index:10;
+}
+.fun .volver{
+    animation: arriba .3s ease-in-out;
+    width: 4rem;
+    height: 4rem;
+    z-index: 11;
+}
+.fun i{
+    transform: translate(-50% , -50%) scale(1);
+}
+@keyframes arriba{
+0%{
+    width: 0rem;
+    height: 0rem;
+}
+50%{
+    width: 5rem;
+    height: 5rem;
+}
+100%{
+    width: 4rem;
+    height: 4rem;
+}
+}
+@media only screen and (max-width: 700px){
+    .inicio .contenido header .logo-marca{
+        font-weight: bold;
+        font-size:2rem;
+        font-family: "Yellowtail";
+        text-shadow: 0 0 35px white;
+        }
+        .inicio .contenido header .barra-navegadora{
+            position: fixed;
+            background-color: #DC7633;
+            font-size: 10px;
+            /* dimension de la letra */
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            line-height: 40px;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .inicio .contenido header .barra-navegadora:hover{
+            box-shadow: 0 0 40px white;/* sombra difuminada */
+        }
+        .inicio .contenido .informacion{
+            padding-bottom: 120px;/* espacio de relleno requerido en la parte inferior del elemento */
+            }
+            .inicio .contenido .informacion h1{
+             font-size: 2rem;
+             letter-spacing: 5px;/* espacio entre caracteres */
+            }
+            .inicio .contenido .informacion h2{
+                font-weight: normal;
+                font-size: 15px;
+                margin-top: -10px;
+                letter-spacing: 2px;
+            }
+            .inicio .contenido .informacion .redes{
+                margin: 10px 0;
+            }
+            .inicio .contenido .informacion .redes a{
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                margin: 0 10px;
+            }
+            .inicio .contenido .imag img{
+                max-width: 200px;
+                border: 3px solid #DC7633;
+            }
+            /* ---------SOBRE MI----------- */
+            .titsobremi{
+                font-size: 3rem;
+            }
+            .sobremi{
+                background-color: white;
+                padding: 90px 0 55px 0;
+                text-align: center;
+            }
+            .sobremi .contenido h3{
+                font-size: 30px;
+            }
+            .sobremi .contenido .parrafo{
+                font-size: 15px;
+                padding: 2px;
+            }
+            .sobremi .contenido p{
+                max-width: 700px;
+                padding: 2px;
+                margin:3px;
+            }
+            .sobremi .contenido .fila{
+                display: inline-block;
+                margin-top: 10px;
+                padding: 2px;
+            }
+            .sobremi .contenido .fila .col{
+                width: 100%;
+            }
+            .sobremi .contenido .fila .col i{
+                width: 30px;
+                height: 30px;
+                border: 2px solid #DC7633;
+                line-height: 30px;
+            }
+            .sobremi .contenido .fila .col{
+                display: inline-block;
+                margin: 5px 0;
+            }
+            .sobremi .contenido .fila .col span{
+                display: block;
+                margin: 2px 0;
+            }
+            /* ---------HABILIDADES 4:38:19----------- */
+            .habilidades .contenido .titulo{
+             font-size: 3rem;
+            }
+            .habilidades .contenido{
+                max-width: 1000px;
+                margin:auto;
+                padding: 0 50px;
+            }
+            .habilidades .contenido h3{
+                font-size: 20px;
+            }
+            .habilidades .contenido .skills span{
+                font-size: 16px;
+            }
+            .menu div{
+                position: relative;
+                width: 0;
+                height: 20px;
+                border-radius: 20px;
+                background-color: #DC7633;
+            }
+            /* ---------RESUMEN 4:38:19----------- */
+            .resumen .contenido .titulo{
+                font-size: 3rem;
+            }
+            .resumen{
+                padding: 20px 0 50px 0;
+            }
+            .resumen .contenido h3{
+                font-size: 20px;
+            }
+            .resumen .contenido .informacion{
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+            .resumen .contenido .informacion .col{
+                width: 50%;
+                margin-right: 1px solid black;
+            }
+        /* ---------CONTACTOS 4:38:19----------- */
+        .contacto .contenido .titulo2{
+            font-size: 3rem;
+        }
+        .contacto .contenido{
+            max-width: 1000px;
+            margin:auto;
+            padding: 10px 10px;
+        }
+        .contacto .contenido h3{
+            font-size: 20px;
+            padding: 2px;
+        }
+        .contacto .contenido .fila .col h2{
+            color: #DC7633;
+            font-size: 1.5rem;
+        }
+        .contacto .contenido .fila .col span{
+            font-size: 12px;
+        }
+        .contenido-volver{
+            right: 0.5rem;
+            bottom: 0.5rem;
+            width: 2rem;
+            height: 2rem;
+        }
+        .volver i{
+            position: absolute;
+            font-size: 1.25rem;
+            top:48%;
+            left:50%;
+            transform:translate(-50%, -50%) scale(0);
+            color:#DC7633;
+            transition: .2s;
+        }
+        .fun .volver{
+            animation: arriba .3s ease-in-out;
+            width: 2.5rem;
+            height: 2.5rem;
+            z-index: 11;
+        }
+        .fun i{
+            transform: translate(-50% , -50%) scale(1);
+        }
+        @keyframes arriba{
+        0%{
+            width: 0rem;
+            height: 0rem;
+        }
+        50%{
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        100%{
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        }
+}
+
